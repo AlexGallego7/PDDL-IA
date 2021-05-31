@@ -18,6 +18,8 @@
         (incompatible ?plato1 - plato ?plato2 - plato)  ;; ?plato1 es incompatible con ?plato2
         (menu_dia ?dia - dia ?primero - primero ?segundo - segundo)
         (servido ?dia - dia)
+        (primero_usado ?p)
+        (segundo_usado ?s)
         
     )
 
@@ -32,9 +34,11 @@
         :parameters (?d - dia ?p - primero ?s - segundo)
         :precondition (and 
             (not (incompatible ?p ?s)) (not (servido ?d))
+            (not (primero_usado ?p)) (not (segundo_usado ?s))
         )
         :effect (and 
-            (servido ?d) (menu_dia ?d ?p ?s)
+            (servido ?d) (menu_dia ?d ?p ?s) 
+            (primero_usado ?p) (segundo_usado ?s)
            ;(increase (total-cost) (precio-plato ?p))
            ;(increase (total-cost) (precio-plato ?s))
         )

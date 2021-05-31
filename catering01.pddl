@@ -3,7 +3,7 @@
     (:objects Macarrones Croquetas Ensalada Gazpacho Paella Ramen Sushi - primero
               Calsotada Cuscus Falafel Sopa_Miso Hamburguesa Ravioli Salmon - segundo
               Pescado Carne Sopa Pasta Vegetal - tipo ;;pasta, pescado, carne, etc
-              Lunes Martes Miercoles Jueves Viernes - dia
+              Viernes Jueves Miercoles Martes Lunes - dia
     )
     (:init 
         (es_tipo Macarrones Pasta)
@@ -20,6 +20,9 @@
         (es_tipo Hamburguesa Carne)
         (es_tipo Ravioli Pasta)
         (es_tipo Salmon Pescado)
+
+        (incompatible Macarrones Calsotada)
+        (incompatible Croquetas Falafel)
 
         (not (servido Lunes))
         (not (servido Martes))

@@ -1,14 +1,38 @@
 (define (problem catering-1)
     (:domain catering)
-    (:objects p0 p1 p2 p3 p4 p5 p6 p7 
-              p8 p9 p10 p11 p12 p13 - plato ;;macarrones, paella, salmon, etc
-              t0 t1 t2 t3 t4 - tipo ;;pasta, pescado, carne, etc
+    (:objects Macarrones Croquetas Ensalada Gazpacho Paella Ramen Sushi - primero
+              Calsotada Cuscus Falafel Sopa_Miso Hamburguesa Ravioli Salmon - segundo
+              Pescado Carne Sopa Pasta Vegetal - tipo ;;pasta, pescado, carne, etc
+              Lunes Martes Miercoles Jueves Viernes - dia
     )
     (:init 
-        (pertenece_a p0 t0)
+        (es_tipo Macarrones Pasta)
+        (es_tipo Croquetas Carne)
+        (es_tipo Ensalada Vegetal)
+        (es_tipo Gazpacho Sopa)
+        (es_tipo Paella Pescado)
+        (es_tipo Ramen Sopa)
+        (es_tipo Sushi Pescado)
+        (es_tipo Calsotada Vegetal)
+        (es_tipo Cuscus Vegetal)
+        (es_tipo Falafel Carne)
+        (es_tipo Sopa_Miso Sopa)
+        (es_tipo Hamburguesa Carne)
+        (es_tipo Ravioli Pasta)
+        (es_tipo Salmon Pescado)
+
+        (not (servido Lunes))
+        (not (servido Martes))
+        (not (servido Miercoles))
+        (not (servido Jueves))
+        (not (servido Viernes))
+
+        ;(= (total-cost) 0)
+        
     )
 
-    (:goal (and
-        
-    ))
+    (:goal (
+        forall (?d - dia) (servido ?d) 
+        )
+    )
 )

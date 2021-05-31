@@ -20,6 +20,8 @@
         (servido ?dia - dia)
         (primero_usado ?p)
         (segundo_usado ?s)
+        (tp_anterior ?tp)
+        (ts_anterior ?ts)
         
     )
 
@@ -31,14 +33,17 @@
     ;)
 
     (:action preparar_menu
-        :parameters (?d - dia ?p - primero ?s - segundo)
+        :parameters (?d - dia ?p - primero ?s - segundo ?tp - tipo ?ts - tipo)
         :precondition (and 
             (not (incompatible ?p ?s)) (not (servido ?d))
             (not (primero_usado ?p)) (not (segundo_usado ?s))
+            (es_tipo ?p ?tp) (es_tipo ?s ?ts)
+            (not (tp_anterior ?tp)) (not (ts_anterior ?ts))
         )
         :effect (and 
             (servido ?d) (menu_dia ?d ?p ?s) 
             (primero_usado ?p) (segundo_usado ?s)
+            (tp_anterior ?tp) (ts_anterior ?ts)
            ;(increase (total-cost) (precio-plato ?p))
            ;(increase (total-cost) (precio-plato ?s))
         )

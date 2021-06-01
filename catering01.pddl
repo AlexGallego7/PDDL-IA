@@ -24,6 +24,8 @@
         (incompatible Macarrones Calsotada)
         (incompatible Croquetas Falafel)
 
+        (plato_dia Jueves Paella)
+
         (not (servido Lunes))
         (not (servido Martes))
         (not (servido Miercoles))

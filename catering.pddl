@@ -18,10 +18,11 @@
         (incompatible ?plato1 - plato ?plato2 - plato)  ;; ?plato1 es incompatible con ?plato2
         (menu_dia ?dia - dia ?primero - primero ?segundo - segundo)
         (servido ?dia - dia)
-        (primero_usado ?p)
-        (segundo_usado ?s)
-        (tp_anterior ?tp)
-        (ts_anterior ?ts)
+        (primero_usado ?p - primero)
+        (segundo_usado ?s - segundo)
+        (tp_anterior ?tp - tipo)
+        (ts_anterior ?ts - tipo)
+        (plato_dia ?d - dia ?p - plato)
         
     )
 

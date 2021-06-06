@@ -1,6 +1,6 @@
 (define (domain catering)
 
-    (:requirements :equality :adl :typing ;;:fluents
+    (:requirements :equality :adl :typing :fluents
         
     )
 
@@ -26,17 +26,18 @@
         
     )
 
-    ;;(:functions
-      ;  (cals-plato ?plato - plato) ;; calorias de ?plato
-       ; (precio-plato ?plato - plato) ;; precio de ?plato
+    (:functions
+        (cals-plato ?plato - plato) ;; calorias de ?plato
+        (precio-plato ?plato - plato) ;; precio de ?plato
 
-        ;(total-cost) ;; coste total del menu
-    ;)
+        (total-cost) ;; coste total del menu
+    )
 
     (:action preparar_menu
         :parameters (?d - dia ?p - primero ?s - segundo ?tp - tipo ?ts - tipo)
         :precondition (and 
             (not (incompatible ?p ?s)) (not (servido ?d))
+            (and (<= (+ (cals-plato ?p) (cals-plato?s)) 1500) (>= (+ (cals-plato ?p) (cals-plato?s)) 1000))
             (not (primero_usado ?p)) (not (segundo_usado ?s))
             (es_tipo ?p ?tp) (es_tipo ?s ?ts)
             (not (tp_anterior ?tp)) (not (ts_anterior ?ts))
@@ -45,11 +46,9 @@
             (servido ?d) (menu_dia ?d ?p ?s) 
             (primero_usado ?p) (segundo_usado ?s)
             (tp_anterior ?tp) (ts_anterior ?ts)
-           ;(increase (total-cost) (precio-plato ?p))
-           ;(increase (total-cost) (precio-plato ?s))
+            (increase (total-cost) (precio-plato ?p))
+            (increase (total-cost) (precio-plato ?s))
         )
     )
-
-
 
 )

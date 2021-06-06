@@ -22,9 +22,9 @@ def generate():
     set_ip = n_primeros(set_p, ni)
     set_is = n_segundos(set_s, ni)
 
-    f = open(f"catering-{n}platos-{ni}incmpls.pddl", "a")
+    f = open(f"problems/catering-{n}platos-{ni}incmpls.pddl", "a")
 
-    f.write(f"(define (problem catering-{n})\n")
+    f.write(f"(define (problem catering-{n}platos-{ni}incmpls)\n")
     f.write("    (:domain catering)\n")
 
     """
@@ -74,12 +74,30 @@ def generate():
     for d in dias:
         f.write(f"       (not (servido {d}))\n")
 
+    for p in set_p:
+        pp = random.randrange(5, 10)
+        cp = random.randrange(250, 750)
+
+        f.write(f"       (= (precio-plato {p[0]}) {pp})\n")
+        f.write(f"       (= (cals-plato {p[0]}) {cp})\n")
+
+
+
+    for s in set_s:
+        ps = random.randrange(8, 15)
+        cs = random.randrange(400, 900)
+
+        f.write(f"       (= (precio-plato {s[0]}) {ps})\n")
+        f.write(f"       (= (cals-plato {s[0]}) {cs})\n")
+
+    f.write("       (= (total-cost) 0)\n")
     f.write("    )\n")
 
     """
         GOAL
     """
-    f.write("    (:goal (\n         forall (?d - dia) (servido ?d)\n        )\n    )\n)")
+    f.write("    (:goal (\n         forall (?d - dia) (servido ?d)\n        )\n    )\n")
+    f.write("    (:metric minimize (total-cost))\n)\n")
 
 
     f.close()

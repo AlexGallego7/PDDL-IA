@@ -6,9 +6,8 @@
 
     (:types
         plato - object
+        tipo - object
         primero segundo - plato
-        calorias - object
-        precio - object
         dia - object
     )
 

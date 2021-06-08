@@ -1,0 +1,165 @@
+PROBLEMA:
+    (catering-15platos-3incmpls)
+TRAZA:
+    
+    step    0: PREPARAR_MENU JUEVES GAZPACHO COSTILLAS_DE_CERDO SOPA VEGETAL
+        1: PREPARAR_MENU MARTES SUSHI CALSOTADA VEGETAL PESCADO
+        2: PREPARAR_MENU LUNES PASTEL_DE_PAN CREMA_ZANAHORIA PESCADO VEGETAL
+        3: PREPARAR_MENU MIERCOLES MACARRONES_BOLONESA RAVIOLLI PASTA PASTA
+        4: PREPARAR_MENU VIERNES CROQUETAS FINGERS_DE_POLLO CARNE CARNE
+     
+
+time spent:    0.00 seconds instantiating 2235 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 1201 facts and 1820 actions
+               0.00 seconds creating final representation with 1201 relevant facts, 1 relevant fluents
+               0.01 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.79 seconds searching, evaluating 5529 states, to a max depth of 0
+               0.80 seconds total time
+               
+PROBLEMA:
+    (catering-15platos-4incmpls)
+TRAZA:
+    step    0: PREPARAR_MENU VIERNES MACARRONES_BOLONESA CREMA_ZANAHORIA PASTA SOPA
+        1: PREPARAR_MENU JUEVES CREMA_CALABACIN COSTILLAS_DE_CERDO VEGETAL CARNE
+        2: PREPARAR_MENU MIERCOLES CROQUETAS CALSOTADA CARNE VEGETAL
+        3: PREPARAR_MENU MARTES FIDEUA_CON_SEPIA RAPE_AL_LIMON PESCADO PESCADO
+        4: PREPARAR_MENU LUNES POTAJE_DE_ALUBIAS RAVIOLLI SOPA PASTA
+     
+
+time spent:    0.00 seconds instantiating 1105 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 1195 facts and 930 actions
+               0.00 seconds creating final representation with 1195 relevant facts, 1 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.10 seconds searching, evaluating 1816 states, to a max depth of 0
+               0.10 seconds total time
+               
+PROBLEMA:
+    (catering-15platos-7incmpls)
+TRAZA:
+    step    0: PREPARAR_MENU LUNES POTAJE_DE_ALUBIAS CREMA_ZANAHORIA PASTA PESCADO
+        1: PREPARAR_MENU MARTES JUDIAS_VERDES RAVIOLLI VEGETAL PASTA
+        2: PREPARAR_MENU VIERNES HUEVOS_RELLENOS ALBONDIGAS CARNE PASTA
+        3: PREPARAR_MENU MIERCOLES RAMEN SUQUET_DE_PESCADO SOPA SOPA
+        4: PREPARAR_MENU JUEVES SUSHI PASTEL_DE_VERDURAS PESCADO VEGETAL
+     
+
+time spent:    0.00 seconds instantiating 1840 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 1181 facts and 1650 actions
+               0.00 seconds creating final representation with 1181 relevant facts, 1 relevant fluents
+               0.01 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.42 seconds searching, evaluating 4015 states, to a max depth of 0
+               0.43 seconds total time
+               
+               
+PROBLEMA:
+    (catering-16platos-9incmpls)
+TRAZA:
+    step    0: PREPARAR_MENU JUEVES PAELLA CANELONES_DE_POLLO PESCADO PASTA
+        1: PREPARAR_MENU VIERNES CROQUETAS LASANA_DE_ATUN CARNE PESCADO
+        2: PREPARAR_MENU MIERCOLES MACARRONES_BOLONESA SUQUET_DE_PESCADO PASTA SOPA
+        3: PREPARAR_MENU MARTES ESCUDELLA TORTILLA_DE_ESPINACAS SOPA VEGETAL
+        4: PREPARAR_MENU LUNES CUSCUS COSTILLAS_DE_CERDO VEGETAL CARNE
+     
+
+time spent:    0.00 seconds instantiating 1635 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 1329 facts and 1245 actions
+               0.00 seconds creating final representation with 1329 relevant facts, 1 relevant fluents
+               0.01 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.36 seconds searching, evaluating 2958 states, to a max depth of 0
+               0.37 seconds total time
+               
+PROBLEMA:
+    (catering-17platos-6incmpls)
+TRAZA:
+    step    0: PREPARAR_MENU VIERNES ENSALADA_DE_COL TORTILLA_DE_ESPINACAS VEGETAL VEGETAL
+        1: PREPARAR_MENU JUEVES MACARRONES_BOLONESA RAPE_AL_LIMON PASTA PESCADO
+        2: PREPARAR_MENU MIERCOLES CROQUETAS FINGERS_DE_POLLO CARNE CARNE
+        3: PREPARAR_MENU MARTES PAELLA CREMA_ZANAHORIA PESCADO SOPA
+        4: PREPARAR_MENU LUNES GAZPACHO RAVIOLLI SOPA PASTA
+     
+
+time spent:    0.00 seconds instantiating 1415 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 1513 facts and 825 actions
+               0.00 seconds creating final representation with 1513 relevant facts, 1 relevant fluents
+               0.01 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.09 seconds searching, evaluating 1196 states, to a max depth of 0
+               0.10 seconds total time
+
+PROBLEMA:
+    (catering-18platos-0incmpls)
+TRAZA:
+    step    0: PREPARAR_MENU VIERNES CROQUETAS ALBONDIGAS CARNE CARNE
+        1: PREPARAR_MENU JUEVES RAMEN BACALAO SOPA PESCADO
+        2: PREPARAR_MENU MIERCOLES PAELLA SOPA_DE_MISO PESCADO SOPA
+        3: PREPARAR_MENU MARTES MACARRONES_BOLONESA TORTILLA_DE_ESPINACAS PASTA VEGETAL
+        4: PREPARAR_MENU LUNES ENSALADA_DE_COL RAVIOLLI VEGETAL PASTA
+     
+
+time spent:    0.00 seconds instantiating 1620 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 1722 facts and 1075 actions
+               0.00 seconds creating final representation with 1722 relevant facts, 1 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.19 seconds searching, evaluating 1781 states, to a max depth of 0
+               0.19 seconds total time
+
+PROBLEMA:
+    (catering-18platos-8incmpls)
+TRAZA:
+    step    0: PREPARAR_MENU LUNES JUDIAS_VERDES CREMA_ZANAHORIA VEGETAL SOPA
+        1: PREPARAR_MENU MARTES POTAJE_DE_ALUBIAS BERENJAS_AL_HORNO SOPA VEGETAL
+        2: PREPARAR_MENU MIERCOLES JUDIAS_VERDES CALSOTADA PESCADO PESCADO
+        3: PREPARAR_MENU JUEVES CANELONES_DE_CARNE ALBONDIGAS CARNE CARNE
+        4: PREPARAR_MENU VIERNES SPAGHETTIS_BOLONESA RAVIOLLI PASTA PASTA
+     
+
+time spent:    0.00 seconds instantiating 2030 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 1683 facts and 1595 actions
+               0.01 seconds creating final representation with 1683 relevant facts, 1 relevant fluents
+               0.01 seconds computing LNF
+               0.01 seconds building connectivity graph
+               0.55 seconds searching, evaluating 3391 states, to a max depth of 0
+               0.58 seconds total time
+
+PROBLEMA:
+    (catering-19platos-7incmpls)
+TRAZA:
+    step    0: PREPARAR_MENU VIERNES JUDIAS_VERDES RAVIOLLI VEGETAL PASTA
+        1: PREPARAR_MENU JUEVES SPAGHETTIS_BOLONESA SOPA_DE_MISO PASTA SOPA
+        2: PREPARAR_MENU MIERCOLES CANELONES_DE_CARNE FINGERS_DE_POLLO CARNE CARNE
+        3: PREPARAR_MENU MARTES PAELLA BERENJAS_AL_HORNO PESCADO VEGETAL
+        4: PREPARAR_MENU LUNES RAMEN LASANA_DE_ATUN SOPA PESCADO
+     
+
+time spent:    0.01 seconds instantiating 1770 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 1876 facts and 1195 actions
+               0.00 seconds creating final representation with 1876 relevant facts, 1 relevant fluents
+               0.00 seconds computing LNF
+               0.01 seconds building connectivity graph
+               0.18 seconds searching, evaluating 2183 states, to a max depth of 0
+               0.20 seconds total time
+
+PROBLEMA:
+    (catering-20platos-7incmpls)
+TRAZA:
+    step    0: PREPARAR_MENU VIERNES PAELLA BACALAO PESCADO PESCADO
+        1: PREPARAR_MENU JUEVES ESCUDELLA SUQUET_DE_PESCADO SOPA SOPA
+        2: PREPARAR_MENU MIERCOLES CANELONES_DE_CARNE FALAFEL CARNE CARNE
+        3: PREPARAR_MENU MARTES MACARRONES_BOLONESA RAVIOLLI PASTA PASTA
+        4: PREPARAR_MENU LUNES PATATAS_CALIU TORTILLA_DE_ESPINACAS VEGETAL VEGETAL
+     
+
+time spent:    0.00 seconds instantiating 1965 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 2075 facts and 1590 actions
+               0.01 seconds creating final representation with 2075 relevant facts, 1 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.34 seconds searching, evaluating 2705 states, to a max depth of 0
+               0.35 seconds total time
+
+               

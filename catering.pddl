@@ -32,14 +32,19 @@
         (total-cost) ;; coste total del menu
     )
 
+
+
     (:action preparar_menu
         :parameters (?d - dia ?p - primero ?s - segundo ?tp - tipo ?ts - tipo)
-        :precondition (and 
+        :precondition (or
+            (plato_dia ?d ?p) (plato_dia ?d ?s)
+            (and 
             (not (incompatible ?p ?s)) (not (servido ?d))
             (and (<= (+ (cals-plato ?p) (cals-plato?s)) 1500) (>= (+ (cals-plato ?p) (cals-plato?s)) 1000))
             (not (primero_usado ?p)) (not (segundo_usado ?s))
             (es_tipo ?p ?tp) (es_tipo ?s ?ts)
             (not (tp_anterior ?tp)) (not (ts_anterior ?ts))
+            )
         )
         :effect (and 
             (servido ?d) (menu_dia ?d ?p ?s) 

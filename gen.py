@@ -15,6 +15,7 @@ def n_segundos(p, n):
 def generate():
     n = random.randrange(15, 21)
     ni = random.randrange(0, 11)
+    pds = random.randrange(0, 3)
 
     set_p = n_primeros(primeros, n)
     set_s = n_segundos(segundos, n)
@@ -74,13 +75,18 @@ def generate():
     for d in dias:
         f.write(f"       (not (servido {d}))\n")
 
+    for i in range(0, pds):
+        plato = random.choice(set_p + set_s)
+        dia = random.choice(dias)
+        f.write(f"       (plato_dia {dia} {plato[0]})\n")
+
+
     for p in set_p:
         pp = random.randrange(5, 10)
         cp = random.randrange(250, 750)
 
         f.write(f"       (= (precio-plato {p[0]}) {pp})\n")
         f.write(f"       (= (cals-plato {p[0]}) {cp})\n")
-
 
 
     for s in set_s:

@@ -39,6 +39,10 @@
        (incompatible Fideua_con_Sepia Pastel_de_Verduras)
        (incompatible Potaje_de_Alubias Crema_Zanahoria)
        (incompatible Canelones_de_Carne Rape_al_Limon)
+       (plato_dia Jueves Gazpacho)
+       (plato_dia Martes Calsotada)
+       (plato_dia Lunes Crema_Zanahoria)
+
        (not (servido Viernes))
        (not (servido Jueves))
        (not (servido Miercoles))

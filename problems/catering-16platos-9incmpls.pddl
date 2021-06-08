@@ -47,6 +47,7 @@
        (incompatible Judias_Verdes Sopa_de_Miso)
        (incompatible Cuscus Raviolli)
        (incompatible Huevos_Rellenos Milanesa_Napolitana)
+       (plato_dia Jueves Paella)
        (not (servido Viernes))
        (not (servido Jueves))
        (not (servido Miercoles))
